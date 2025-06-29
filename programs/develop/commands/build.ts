@@ -38,7 +38,7 @@ export async function extensionBuild(
     const baseConfig: Configuration = webpackConfig(projectPath, {
       ...buildOptions,
       browser,
-      mode: 'production',
+      mode: buildOptions?.mode || 'production',
       output: {
         clean: true,
         path: path.join(projectPath, 'dist', browser)

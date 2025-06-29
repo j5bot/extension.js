@@ -67,3 +67,4 @@ test-results.json
 /e2e-report/
 specs/
 templates/wasm/
+.idea

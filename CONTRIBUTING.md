@@ -1,6 +1,6 @@
 # Contributing 🧩
 
-First off, thanks a lot for taking time to read this part. Extension.js' core phiolosophy is to make it very easy to develop browser extensions, and that includes the program that makes it happen as well. Hope this guide makes it very easy for you to contribute ;)
+First off, thanks a lot for taking time to read this part. Extension.js' core philosophy is to make it very easy to develop browser extensions, and that includes the program that makes it happen as well. Hope this guide makes it very easy for you to contribute ;)
 
 Extension.js runs on top of webpack using custom plugins. The whole Extension.js program consists of three core modules.
 

@@ -44,6 +44,7 @@ export interface DevOptions extends BrowserOptionsBase {
 
 export interface BuildOptions {
   browser: BrowserOptionsBase['browser']
+  mode: 'production' | 'development'
   zipFilename?: string
   zip?: boolean
   zipSource?: boolean

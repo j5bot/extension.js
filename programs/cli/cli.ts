@@ -265,6 +265,9 @@ extensionJs
     '--browser <chrome | edge | firefox>',
     'specify a browser to preview your extension in production mode. Defaults to `chrome`'
   )
+  .option('--mode <production | development>',
+    'which mode to run in, defaults to production'
+  )
   .option(
     '--polyfill [boolean]',
     'whether or not to apply the cross-browser polyfill. Defaults to `false`'
@@ -292,6 +295,7 @@ extensionJs
     for (const vendor of vendors(browser)) {
       await extensionBuild(pathOrRemoteUrl, {
         browser: vendor as BuildOptions['browser'],
+        mode: buildOptions.mode,
         polyfill: buildOptions.polyfill,
         zip: buildOptions.zip,
         zipSource: buildOptions.zipSource,
